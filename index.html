@@ -12,7 +12,7 @@
   <meta property="og:description" content="We help startups & SMBs scale revenue with product-led growth, go-to-market strategy, and data-driven marketing." />
   <meta property="og:image" content="assets/og-summitedge.webp" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://yourusername.github.io/landing-consulting" />
+  <meta property="og:url" content="https://tana10j.github.io/landing-consulting" />
 
   
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,7 +45,7 @@
   </script>
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Small custom CSS to complement Tailwind -->
+ 
   <style>
     :root {
       --hero-grad: linear-gradient(135deg, rgba(15,97,255,0.08), rgba(6,182,212,0.04));
@@ -585,12 +585,11 @@
     if (closeBookingBtn) closeBookingBtn.addEventListener('click', closeBooking);
     if (cancelBooking) cancelBooking.addEventListener('click', closeBooking);
 
-    // Simple booking form handler (demo - replace with real backend or Calendly)
     const bookingForm = document.getElementById('booking-form');
     bookingForm.addEventListener('submit', (e) => {
       e.preventDefault();
       bookingFeedback.textContent = 'Thanks! Your request was received - we will email a confirmation.';
-      // Save to localStorage (demo) so you can inspect requests locally
+    
       const data = {
         name: bookingForm.bname.value,
         email: bookingForm.bemail.value,
@@ -604,7 +603,6 @@
       setTimeout(closeBooking, 1600);
     });
 
-    // Contact form handler (demo)
     const contactForm = document.getElementById('contact-form');
     const formStatus = document.getElementById('contact-form-status');
     contactForm.addEventListener('submit', (e) => {
@@ -615,7 +613,7 @@
         message: contactForm.message.value,
         createdAt: new Date().toISOString()
       };
-      // Save locally for demo purposes
+
       const saved = JSON.parse(localStorage.getItem('summitedge-contacts') || '[]');
       saved.push(formData);
       localStorage.setItem('summitedge-contacts', JSON.stringify(saved));
@@ -624,14 +622,12 @@
       setTimeout(() => formStatus.textContent = "We'll respond within 48 hours", 3000);
     });
 
-    // Accessibility: close modal with Esc
     window.addEventListener('keydown', (e) => {
       if (e.key === 'Escape' && !bookingModal.classList.contains('hidden')) {
         closeBooking();
       }
     });
 
-    // If links with hashes exist for booking, open modal
     document.querySelectorAll('a[href="#book"]').forEach(a => a.addEventListener('click', (ev) => {
       ev.preventDefault();
       openBooking();
