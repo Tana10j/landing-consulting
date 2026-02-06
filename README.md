@@ -1,4 +1,4 @@
-# SummitEdge — Consulting / Agency Landing
+# SummitEdge - Consulting / Agency Landing
 
 Elegant, responsive consulting landing page built with **Tailwind CSS (CDN)** and vanilla JavaScript.
 This repository contains a single static page (`index.html`) designed as a portfolio piece to showcase product strategy and growth consulting work.
@@ -6,10 +6,10 @@ This repository contains a single static page (`index.html`) designed as a portf
 ---
 
 ## What’s included
-- `index.html` — full landing page (Tailwind CDN, JS handlers for modal & contact form).
-- `assets/` — images and logos used by the page (place your images here).
-- `README.md` — this file.
-- `screenshot.png` — preview image for the project.
+- `index.html` - full landing page (Tailwind CDN, JS handlers for modal & contact form).
+- `assets/` - images and logos used by the page (place your images here).
+- `README.md` - this file.
+- `screenshot.png` - preview image for the project.
 
 ---
 
@@ -37,7 +37,7 @@ Use the included `screenshot.png` as a quick thumbnail in your portfolio or READ
 
 > I **cannot** push to your GitHub or enable Pages for you from here. Below are the exact commands and UI steps you should run on your machine to deploy the site. If you want, run them and paste any terminal output here and I’ll help debug.
 
-### Option A — Create repo on GitHub website (recommended if you prefer UI)
+### Option A - Create repo on GitHub website (recommended if you prefer UI)
 1. Create a new **public** repository on GitHub named `landing-consulting` (or a name of your choice).
 2. From your local project folder (where `index.html` is), run the following:
 
@@ -57,7 +57,7 @@ git push -u origin main
      `https://<YOUR_GITHUB_USERNAME>.github.io/landing-consulting/`
    - Wait a minute and then visit the URL.
 
-### Option B — Create & push repo using the GitHub CLI
+### Option B - Create & push repo using the GitHub CLI
 (If you have `gh` installed and authenticated)
 
 ```bash
@@ -90,7 +90,7 @@ Place images in `assets/` with the following names (used by `index.html`):
 ---
 
 ## License
-MIT — feel free to reuse and modify for your portfolio.
+MIT - feel free to reuse and modify for your portfolio.
 
 ---
 
