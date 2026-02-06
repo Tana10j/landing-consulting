@@ -1,26 +1,20 @@
-# SummitEdge - Consulting & Agency Landing Page
+# SummitEdge — Consulting / Agency Landing
 
-<p class="text-center">
-  <img src="og-summitedge.png" alt="SummitEdge Consulting Landing Page Preview" style="max-width:100%; height:auto;">
-</p>
-
-A clean, elegant, and conversion-focused **consulting / agency landing page** built with **HTML, Tailwind CSS (CDN)**, and **vanilla JavaScript**.  
-This project is part of my **web design & frontend development portfolio**, showcasing my ability to design professional business pages with strong structure, clarity, and visual hierarchy.
+Elegant, responsive consulting landing page built with **Tailwind CSS (CDN)** and vanilla JavaScript.
+This repository contains a single static page (`index.html`) designed as a portfolio piece to showcase product strategy and growth consulting work.
 
 ---
 
-## 🔍 Project Overview
+## What’s included
+- `index.html` — full landing page (Tailwind CDN, JS handlers for modal & contact form).
+- `assets/` — images and logos used by the page (place your images here).
+- `README.md` — this file.
+- `screenshot.png` — preview image for the project.
 
-**SummitEdge** represents a fictional consulting agency focused on:
-- Product strategy
-- Growth & go-to-market execution
-- Startup and SME advisory
+---
 
-The goal of this landing page is to:
-- Clearly communicate value within seconds
-- Guide users toward conversion (booking / contact)
-- Demonstrate modern UI practices using Tailwind CSS
-- Remain lightweight, fast, and fully static
+## Preview
+Use the included `screenshot.png` as a quick thumbnail in your portfolio or README. You can also open `index.html` locally (instructions below).
 
 ---
 
@@ -66,32 +60,13 @@ landing-consulting/
 
 ---
 
-## 🚀 Live Demo
+## How to publish on GitHub Pages (step-by-step)
 
-Once deployed with GitHub Pages, the site is available at:
+> I **cannot** push to your GitHub or enable Pages for you from here. Below are the exact commands and UI steps you should run on your machine to deploy the site. If you want, run them and paste any terminal output here and I’ll help debug.
 
-https://<YOUR_GITHUB_USERNAME>.github.io/landing-consulting/
-
-## 🧪 Run Locally
-
-You can preview the project locally in any of the following ways:
-
-### Option 1 - Open directly
-- Double-click `index.html`
-- Opens instantly in your browser
-
-### Option 2 - VS Code (recommended)
-1. Open the folder in **Visual Studio Code**
-2. Install **Live Server** extension
-3. Right-click `index.html` → **Open with Live Server**
-
----
-
-## 🌍 Deployment (GitHub Pages)
-
-This project is deployed using **GitHub Pages**, completely free.
-
-### Commands used:
+### Option A — Create repo on GitHub website (recommended if you prefer UI)
+1. Create a new **public** repository on GitHub named `landing-consulting` (or a name of your choice).
+2. From your local project folder (where `index.html` is), run the following:
 
 ```bash
 git init
@@ -100,55 +75,50 @@ git commit -m "Initial commit: SummitEdge consulting landing"
 git branch -M main
 git remote add origin https://github.com/<YOUR_GITHUB_USERNAME>/landing-consulting.git
 git push -u origin main
+```
 
-Then:
+3. On GitHub, open the repository → **Settings** → **Pages** (or "Pages & deployments").
+   - Under "Build and deployment" or "Source", select **Branch: main** and folder **/ (root)**.
+   - Save. Your site will be published at:
+     `https://<YOUR_GITHUB_USERNAME>.github.io/landing-consulting/`
+   - Wait a minute and then visit the URL.
 
-GitHub repo → Settings
+### Option B — Create & push repo using the GitHub CLI
+(If you have `gh` installed and authenticated)
 
-Pages
+```bash
+cd /path/to/landing-consulting
+gh repo create <YOUR_GITHUB_USERNAME>/landing-consulting --public --source=. --remote=origin --push
+# (Then enable Pages via web UI as above, or use gh api if you prefer advanced automation)
+```
 
-Source: main branch, / (root)
+---
 
-Save
+## Netlify / Vercel (optional)
+If you prefer automatic deploys and previews, connect the GitHub repo to **Netlify** or **Vercel**:
+- Netlify: "New site from Git" → select repo → Deploy.
+- Vercel: "Import Project" → select repo → Deploy.
+Both services will auto-deploy on each push. For CDN + static HTML no build is needed.
 
-🖼 Image Sources
+---
 
-All placeholder images can be replaced with free stock photos from:
+## Image credits & suggestions
+Download free asset images from:
+- [Unsplash](https://unsplash.com) — keywords: "team meeting", "startup dashboard", "product analytics"
+- [Pexels](https://pexels.com)
 
-Unsplash
+Place images in `assets/` with the following names (used by `index.html`):
+- `consulting-team.jpg`
+- `logo-a.png`, `logo-b.png`, `logo-c.png`
+- `case-a.jpg`, `case-b.jpg`, `case-c.jpg`
+- `og-summitedge.png` (optional - for rich previews)
 
-Pexels
+---
 
-Recommended search terms:
+## License
+MIT — feel free to reuse and modify for your portfolio.
 
-consulting team
+---
 
-startup meeting
-
-business strategy
-
-product analytics
-
-📌 Portfolio Use
-
-This project demonstrates:
-
-Visual hierarchy & layout thinking
-
-Business-oriented UI design
-
-Tailwind CSS proficiency
-
-Clean, readable HTML structure
-
-Real-world landing page composition
-
-It is intended as a portfolio artifact, not a production SaaS.
-
-📄 License
-
-MIT License - free to reuse, modify, and adapt.
-
-Author
-Tana Joshua Ayo-Ogbor
-Frontend Developer | Web Designer | Virtual Assistant
+## Need help?
+Run the git commands above and paste any errors here. I’ll walk you through fixing them and verifying the GitHub Pages URL.
